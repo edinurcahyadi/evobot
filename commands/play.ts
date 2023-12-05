@@ -8,8 +8,8 @@ import { playlistPattern } from "../utils/patterns";
 
 export default {
   data: new SlashCommandBuilder()
-    .setName("play")
-    .setDescription(i18n.__("play.description"))
+    .setName("+play")
+    .setDescription(i18n.__("+play.description"))
     .addStringOption((option) => option.setName("song").setDescription("The song you want to play").setRequired(true)),
   cooldown: 3,
   permissions: [
